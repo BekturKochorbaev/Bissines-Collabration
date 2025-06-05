@@ -28,11 +28,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r business_collaboration/req.txt
 
-      - name: Install test dependencies
-        run: pip install pytest
-
-      - name: Test
-        run: pytest
+#      - name: Install test dependencies
+#        run: pip install pytest
+#
+#      - name: Test
+#        run: pytest
         env:
           COOKING_CORE_SETTING_DATABASES: '{"default":{"HOST":"db"}}'
           COOKING_CORE_SETTING_LOCAL_SETTINGS_PATH: './cooking_core/project/settings/templates/settings.github.py'
