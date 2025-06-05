@@ -38,4 +38,4 @@ jobs:
           END
       - name: Run deploy
         run: |
-          ssh target "cd Cooking-Core/ && docker-compose down && git pull && docker-compose build && docker-compose up -d --force-recreate"
+          ssh target "cd Bissines-Collabration/business_collaboration/ && docker-compose down && git pull && docker-compose build && docker-compose up -d --force-recreate"
