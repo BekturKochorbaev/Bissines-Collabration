@@ -6,7 +6,6 @@ jobs:
   quality-assurance:
     name: Quality Assurance
     runs-on: ubuntu-latest
-    container: python:3.10
 
     services:
       db:
