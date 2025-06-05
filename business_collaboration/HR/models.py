@@ -35,6 +35,7 @@ class Personal(models.Model):
     passport_number = models.CharField(max_length=150)
     health_history = models.FileField(upload_to='health_history_files/', null=True, blank=True)
     pay = models.IntegerField(null=True, blank=True)
+    tay = models.IntegerField(null=True, blank=True)
 
 
 class VisitHistory(models.Model):
